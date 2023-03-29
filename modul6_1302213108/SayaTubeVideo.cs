@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +16,8 @@ namespace modul6_1302213108
     public SayaTubeVideo(String title)
     {
         if (title == null || title.Length;title++)
+
+        
     }
 
     public void IncreasePlayCount(int count)
@@ -29,8 +31,8 @@ namespace modul6_1302213108
     public void PrintVideoDetail()
     {
         Console.WriteLine("Video ID: {0}", this.id);
-        Console.WriteLine("Video title: {0}", this.title);
-        Console.WriteLine("Video Playcount: {0}", this.id);
+        Console.WriteLine("Title: {0}", this.title);
+        Console.WriteLine("Playcount: {0}", this.id);
     }
 
     
