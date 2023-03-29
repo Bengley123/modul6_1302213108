@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -17,6 +18,7 @@ namespace modul6_1302213108
     public SayaTubeUser(string Username)
     {
         this.Username = Username;
+        int id = new Random().Next(10000, 99999);
     }
 
     public int GetTotalVieoPlayCount()
@@ -37,9 +39,9 @@ namespace modul6_1302213108
     public void PrintAllVideoPlayCount()
     {
         Console.WriteLine("User", this.Username);
-        for(int i = 0; i < uploadVideos.Count; i++)
+        for (int i = 0; i < uploadVideos.Count || i < 8; i++)
         {
-
+            Console.WriteLine("Video ");
         }
 
         Console.WriteLine("Video ke - 1 judulnya adalah: ", this);
